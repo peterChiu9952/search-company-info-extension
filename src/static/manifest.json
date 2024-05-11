@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "公司資訊快速查",
+  "version": "1.0.0",
+  "description": "自動擷取公司名稱，快速搜尋公司資訊。",
+  "icons": {
+    "16": "icons/icons8-magnifier-16.png",
+    "32": "icons/icons8-magnifier-32.png",
+    "48": "icons/icons8-magnifier-48.png",
+    "128": "icons/icons8-magnifier-128.png"
+  },
+  "action": {
+    "default_title": "公司資訊快速查",
+    "default_popup": "popup.html"
+  },
+  "author": "peter.chiu.9952@gmail.com",
+  "permissions": [
+    "scripting",
+    "contextMenus",
+    "storage",
+    "tabs"
+  ],
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+}
